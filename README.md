@@ -2,6 +2,12 @@
 
 PeerJS wraps the browser's WebRTC implementation to provide a complete, configurable, and easy-to-use peer-to-peer connection API. Equipped with nothing but an ID, a peer can create a P2P data or media stream connection to a remote peer <https://peerjs.com/>
 
+## How to run video-chat app ##
+
+Open a terminal and go to `peerjs-video-chat` directory:
+
+Run npm install
+
 ## Generate your certificates ##
 
 In terminal go to cert folder, delete cert.pem and key.pem files
@@ -13,15 +19,13 @@ rm csr.pem
 
 For more informations visit <https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/>
 
-## How to run video-chat app ##
+## Running your video-chat app ##
 
-Open a terminal and go to `peerjs-video-chat` directory:
+After doing all this start your app with the following command:
 
-Run npm install
+npm start
 
-Run npm start
-
-After that open one tab with <https://localhost:3000>
+Now one tab with <https://localhost:3000>
 And open second tab with <https://localhost:3000>
 
 ## Important note ##
