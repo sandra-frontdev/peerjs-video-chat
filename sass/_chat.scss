@@ -1,0 +1,20 @@
+.chat {
+	grid-column: center-start / center-end;
+
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 50px;
+
+	&__connection {
+		grid-column: 1 / span 3;
+	}
+
+	&__call-chat {
+		grid-column: 4 / -1;
+		justify-self: end;
+	}
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,10 @@
+.header {
+	grid-column: full-start / full-end;
+
+	&__title {
+		color: #303030;
+		text-align: center;
+		margin-top: 2rem;
+		font-size: 3rem;
+	}
+}

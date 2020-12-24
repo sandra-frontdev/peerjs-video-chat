@@ -1,0 +1,16 @@
+.videos {
+	grid-column: center-start / center-end;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	&__first-video {
+		width: 60%;
+		justify-self: start;
+	}
+
+	&__second-video {
+		width: 60%;
+		justify-self: end;
+	}
+}

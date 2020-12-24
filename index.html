@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<title>Video example with Peer server and Peerjs</title>
+</head>
+
+<body>
+	<div class="grid-container">
+		<!-- Header -->
+		<header class="header">
+			<h1 class="header__title">Video Example Using Peer Server and Peerjs</h1>
+		</header>
+
+		<!-- Main content -->
+		<div class="videos mb-lg">
+			<div class="videos__first-video">
+				<!-- Video of the current user-->
+				<div class="text-center">
+					<video id="my-camera" width="100%" height="100%" autoplay="autoplay" muted="true"
+						class="center-block"></video>
+					<p class="label label-info">Your video</p>
+				</div>
+			</div>
+
+			<div class="videos__second-video">
+				<!-- Video of your peer connection -->
+				<div class="text-center">
+					<video id="peer-camera" width="100%" height="100%" autoplay="autoplay" class="center-block"></video>
+					<p class="label label-info" id="connected_peer"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="chat">
+			<div class="chat__connection">
+				<h2 class="heading-3 mb-sm">
+					ID for sharing
+				</h2>
+				<!-- The ID of your current session -->
+				<h4 class="heading-4 text-center">
+					<p id="peer-id-label"></p>
+				</h4>
+				<div class="form-horizontal" id="connection-form">
+					<div class="mb-sm form-group">
+						<label for="name" class="control-label">Your username</label>
+						<div class="">
+							<input type="text" class="form-control" name="name" id="name" placeholder="Your random username">
+						</div>
+					</div>
+					<div class="mb-sm form-group">
+						<label for="peer_id" class="control-label">Peer ID (id of your connection)</label>
+						<div class="mb-sm ">
+							<input type="text" class="form-control" name="peer_id" id="peer_id" placeholder="Peer ID"
+								autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+							<!-- Show message if someone connected to the client -->
+							<p id="connected_peer_container" class="p-sm hidden">
+								An user is already connected to your session. Just provide a name to connect !
+							</p>
+						</div>
+					</div>
+					<div class="mb-sm form-group">
+						<div class="">
+							<button id="connect-to-peer-btn" class="btn btn-primary">Connect to Peer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="chat__call-chat">
+				<div id="chat" class="hidden">
+					<div id="message-container">
+						<div class="form-group">
+							<div class="mb-sm">
+								<label class="heading-3 control-label">Call connection</label>
+							</div>
+							<div class="mb-sm"><button id="call" class="btn btn-info">Call</button></div>
+							<div class="mb-sm">
+								<label class="heading-3 control-label">Chat with connection</label>
+							</div>
+							<div class="mb-sm"><input type="text" class="form-control" name="message" id="message"
+									placeholder="Type your message here">
+							</div>
+							<div><button id="send-message" class="btn btn-success">Send</button></div>
+							<div id="messages-container">
+								<div class="list-group" id="messages"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+	<script src="resources/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+%heading {
+	font-family: $font-display;
+	font-weight: 400;
+}
+
+.heading-1 {
+	@extend %heading;
+	font-size: 4.5rem;
+	color: $color-grey-light-1;
+	line-height: 1;
+}
+
+.heading-2 {
+	@extend %heading;
+	font-style: italic;
+	font-size: 4rem;
+	line-height: 1;
+
+	&--light {
+		color: $color-grey-light-1;
+	}
+
+	&--dark {
+		color: $color-grey-dark-1;
+	}
+}
+
+.heading-3 {
+	@extend %heading;
+	color: $color-primary;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.heading-4 {
+	@extend %heading;
+	font-size: 1.9rem;
+
+	&--light {
+		color: $color-grey-light-1;
+	}
+
+	&--dark {
+		color: $color-grey-dark-1;
+	}
+}
+
+p {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.p-sm {
+	font-size: 1.3rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	background-color: $color-primary;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	font-family: $font-display;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: all .2;
+	-webkit-transition: all .2;
+	-moz-transition: all .2;
+	-ms-transition: all .2;
+	-o-transition: all .2;
+
+	&:hover {
+		background-color: $color-primary-dark;
+	}
+}
+
+label {
+	font-size: 1.6rem;
+}
+
+input,
+placeholder {
+	font-size: 1.3rem;
+}
+
+input {
+	padding: 0.5rem 0.5rem;
+	border: 1px solid #303030;
+	outline: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.mb-sm {
+	margin-bottom: 2rem;
+}
+
+.mb-md {
+	margin-bottom: 3rem;
+}
+
+.mb-lg {
+	margin-bottom: 4rem;
+}
+
+.mb-hg {
+	margin-bottom: 8rem;
+}
