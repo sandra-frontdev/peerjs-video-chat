@@ -4,7 +4,7 @@ PeerJS wraps the browser's WebRTC implementation to provide a complete, configur
 
 ## How to run app ##
 
-Open a terminal and go to `peerjs-video-app` directory:
+Open a terminal and go to `peerjs-video-chat` directory:
 
 Run npm install
 
