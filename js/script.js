@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	peer.on('error', (err) => {
-		alert("An error ocurred with peer: " + err);
+		alert("Please start peer server: " + err);
 		console.error(err);
 	});
 
